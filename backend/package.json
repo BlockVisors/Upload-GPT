@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=16"
+  },
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "frontend": "npm start --prefix ../frontend",
+    "backend": "nodemon app.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pinecone-database/pinecone": "^0.0.12",
+    "axios": "^0.26.1",
+    "concurrently": "^8.0.1",
+    "core-js": "^3.30.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "langchain": "^0.0.56",
+    "mongoose": "^7.0.3",
+    "node-fetch": "^2.6.9",
+    "openai": "^3.2.1",
+    "ytdl-core": "^4.11.4"
+  }
+}
